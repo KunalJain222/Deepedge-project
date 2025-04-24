@@ -5,7 +5,7 @@ os.makedirs("streamlit_app", exist_ok=True)
 import streamlit as st
 import requests
 
-BACKEND_URL = "http://localhost:5000/generate"
+BACKEND_URL = "http://localhost:5000/query"
 
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
